@@ -6,7 +6,9 @@ const request = require('request');
 const geoCode = require('./utilis/geocode')
 const forecast = require('./utilis/forecast')
 const app = express()
-    // Define paths for express config
+const port = process.env.PORT || 3000
+
+// Define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewpath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -87,8 +89,8 @@ app.get('*', (req, res) => {
         error_msg: 'page not found'
     })
 });
-app.listen(3000, () => {
-    console.log('server is up on port 3000')
+app.listen(port, () => {
+    console.log('server is up on port  ' + port)
 })
 
 // const { json, response } = require('express');

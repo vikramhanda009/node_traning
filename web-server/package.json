@@ -1,0 +1,16 @@
+{
+    "name": "wheather-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "nodemon": "^2.0.7",
+        "request": "^2.88.2"
+    }
+}
