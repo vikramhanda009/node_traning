@@ -93,6 +93,7 @@ app.listen(port, () => {
     console.log('server is up on port  ' + port)
 })
 
+
 // const { json, response } = require('express');
 // const request = require('request');
 // const geoCode  = require('./utilis/geocode')
